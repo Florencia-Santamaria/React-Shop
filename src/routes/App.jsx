@@ -14,11 +14,13 @@ import '../styles/global.css'
 import RecoveryPassword from '../pages/RecoveryPassword'
 import AppContext from '../context/AppContext'
 import useInitialState from '../hooks/useInitialState'
+import Contacto from '../pages/Contacto'
 
 const App = () => {
   const initialState = useInitialState()
   return (
     <AppContext.Provider value={initialState}>
+      {/* Comparte el estado con todos los componentes */}
       <BrowserRouter>
         <Layout>
           <Routes>
@@ -31,6 +33,7 @@ const App = () => {
             <Route exact path='/signup' element={<CreateAccount />} />
             <Route exact path='/checkout' element={<Checkout />} />
             <Route exact path='/orders' element={<Orders />} />
+            <Route exact path='/Contacto' element={<Contacto />} />
             <Route path='*' element={<NotFound />} />
           </Routes>
         </Layout>

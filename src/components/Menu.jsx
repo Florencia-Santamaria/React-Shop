@@ -6,8 +6,8 @@ const Menu = () => {
     <div className='Menu'>
       <ul>
         <li>
-          <a href='/' className='title'>
-            My orders
+          <a href='/Contacto' className='contacto'>
+            Contacto
           </a>
         </li>
         <li>

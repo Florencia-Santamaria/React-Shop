@@ -1,0 +1,23 @@
+@use 'vars';
+
+.General{
+    height: 350px;
+    border: 2px solid black;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.Inputs label{
+    padding-right: 15px;
+}
+
+.Confirmar{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+   
+}
+
